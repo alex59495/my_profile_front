@@ -2,7 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CONTAINERS */
 .main-container {
   min-height: 100vh;
   overflow: auto;
+}
+
+.search-container {
+  max-width: 600px;
+}
+
+/* STEPPER */
+@layer components {
+  .step-container {
+    @apply grow;
+  }
+
+  .step-item {
+    @apply relative flex flex-col justify-center items-center cursor-pointer w-full;
+  }
+  
+  .step-item::before {
+    @apply content-[''] bg-slate-200 absolute w-2/4 h-[3px] right-2/4;
+  }
+
+  .step-item::after {
+    @apply content-[''] bg-slate-200 absolute w-2/4 h-[3px] left-2/4;
+  }
+
+  .active.step-item::before, .complete.step-item::before {
+    @apply content-[''] bg-slate-500 absolute w-2/4 h-[3px] right-2/4;
+  }
+
+  .complete.step-item::after {
+    @apply content-[''] bg-slate-500 absolute w-2/4 h-[3px] left-2/4;
+  }
+
+  .step {
+    @apply w-10 h-10 flex items-center justify-center z-10 relative bg-white border border-slate-300 rounded-full font-semibold text-white;
+  }
+
+  .active .step {
+    @apply border-slate-900;
+  }
+
+  .complete .step {
+    @apply border-slate-700;
+  }
+
+  .complete p {
+    @apply text-white;
+  }
+
+  .step-text {
+    @apply text-gray-400;
+  }
+
+  .complete.step-text, .active.step-text {
+    @apply text-gray-600;
+  }
 }

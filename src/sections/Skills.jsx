@@ -31,11 +31,11 @@ export default function Skills() {
         placeholder={i18n.t("searchPlaceholder")}
       />
       <h2 className="text-center">{i18n.t("skills")}</h2>
-      <ul className="mx-auto w-max list-none skills">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto skills">
         {skills.map((skill) => {
           return (
-            <li key={skill.title}>
-              <div className="flex items-center">
+            <div key={skill.title}>
+              <div className="flex items-center shadow-md rounded-md p-1 max-w-xs mx-auto">
                 <svg
                   height="50px"
                   width="50px"
@@ -48,10 +48,10 @@ export default function Skills() {
                   <Stars level={skill.level} />
                 </div>
               </div>
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </div>
       <Contacts />
     </div>
   );

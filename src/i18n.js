@@ -7,6 +7,9 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      dateFreelance: "2021 - 2022",
+      dateLeWagon: "January 2020 - June 2020",
+      dateSightcall: "February 2022 - Actual",
       english: "English",
       french: "French",
       navbarIntroduction: "Introduction",
@@ -19,6 +22,9 @@ const resources = {
   },
   fr: {
     translation: {
+      dateFreelance: "2021 - 2022",
+      dateLeWagon: "Janvier 2020 - Juin 2020",
+      dateSightcall: "Février 2022 - Actuel",
       english: "Anglais",
       french: "Français",
       navbarIntroduction: "Présentation",
@@ -31,6 +37,9 @@ const resources = {
   },
   pt: {
     translation: {
+      dateFreelance: "2021 - 2022",
+      dateLeWagon: "Janeiro 2020 - Junho 2020",
+      dateSightcall: "Fevereiro 2022 - Atual",
       english: "Inglês",
       french: "Francês",
       navbarIntroduction: "Apresentação",
