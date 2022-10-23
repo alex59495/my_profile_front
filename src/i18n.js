@@ -14,6 +14,7 @@ const resources = {
       navbarSkills: "Skills",
       navbarGame: "Game",
       portuguese: "Portuguese",
+      searchPlaceholder: "Search for skills",
     },
   },
   fr: {
@@ -25,6 +26,7 @@ const resources = {
       navbarSkills: "Compétences",
       navbarGame: "Jeu",
       portuguese: "Portugais",
+      searchPlaceholder: "Rechercher des compétences",
     },
   },
   pt: {
@@ -36,6 +38,7 @@ const resources = {
       navbarSkills: "Compêtencias",
       navbarGame: "Jogo",
       portuguese: "Portguês",
+      searchPlaceholder: "Procurar compêtencias",
     },
   },
 };
