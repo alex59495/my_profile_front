@@ -7,7 +7,6 @@ import Introduction from "./sections/Introduction";
 import Game from "./sections/Game";
 import Experiences from "./sections/Experiences";
 import Skills from "./sections/Skills";
-import GithubStats from "./sections/GithubStats";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
   {
     path: "/skills",
     element: <Skills />,
-  },
-  {
-    path: "/github-stats",
-    element: <GithubStats />,
   },
 ]);
 

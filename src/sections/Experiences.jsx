@@ -10,19 +10,19 @@ export default function Experiences() {
         steps={[
           {
             role: "Le Wagon bootcamp",
-            description: "",
+            description: i18n.t("experienceDescriptionLW"),
             icon: "LeWagon.png",
             date: i18n.t("dateLeWagon"),
           },
           {
             role: "Freelance Web Developper",
-            description: "baj",
+            description: i18n.t("experienceDescriptionFreelance"),
             icon: "person-workspace.svg",
             date: i18n.t("dateFreelance"),
           },
           {
             role: "Fullstack Web Developer",
-            description: "blab",
+            description: i18n.t("experienceDescriptionSightcall"),
             icon: "Sightcall.svg",
             date: i18n.t("dateSightcall"),
           },

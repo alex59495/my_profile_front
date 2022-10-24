@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  font-size: 32px;
+}
+
 /* CONTAINERS */
 .main-container {
   min-height: 100vh;

@@ -11,7 +11,16 @@ const resources = {
       dateLeWagon: "January 2020 - June 2020",
       dateSightcall: "February 2022 - Actual",
       english: "English",
+      experiencesButtonLess: "See less",
+      experiencesButtonMore: "Discover more",
+      experienceDescriptionLW:
+        "I did Le Wagon bootcamp between January 2020 and June 2020",
+      experienceDescriptionFreelance:
+        "<li>FullStack Developper <b>freelance</b> working on several professional and personal projects (RoR, React, NodeJS etc..).</li> <li>Teacher-Assistant at <b>Le Wagon</b>.</li>",
+      experienceDescriptionSightcall:
+        "<li>FullStack Developper at <b>Sightcall</b> working with multiple technologies (Ruby on Rails, EmberJS, ElasticSearch etc...)</li>",
       french: "French",
+      introduction: "Hello, I'm Alexis",
       navbarIntroduction: "Introduction",
       navbarExperiences: "Experiences",
       navbarSkills: "Skills",
@@ -26,7 +35,16 @@ const resources = {
       dateLeWagon: "Janvier 2020 - Juin 2020",
       dateSightcall: "Février 2022 - Actuel",
       english: "Anglais",
+      experiencesButtonLess: "Voir moins",
+      experiencesButtonMore: "Voir plus",
+      experienceDescriptionLW:
+        "J'ai participé au Bootcamp du Wagon entre Janvier 2020 et Juin 2020",
+      experienceDescriptionFreelance:
+        "<li>Développeur Fullstack freelance travaillant sur plusieurs projets professionels et personnels (RoR, React, NodeJS etc..).</li><li>Teacher-Assistant <b>au Wagon</b>.</li>",
+      experienceDescriptionSightcall:
+        "<li>Développeur FullStack au sein de Sightcall travaillant avec différentes techno (Ruby on Rails, EmberJS, ElasticSearch etc...)</li>",
       french: "Français",
+      introduction: "Salut, moi c'est Alexis",
       navbarIntroduction: "Présentation",
       navbarExperiences: "Expériences",
       navbarSkills: "Compétences",
@@ -41,7 +59,16 @@ const resources = {
       dateLeWagon: "Janeiro 2020 - Junho 2020",
       dateSightcall: "Fevereiro 2022 - Atual",
       english: "Inglês",
+      experiencesButtonLess: "Ver menos",
+      experiencesButtonMore: "Ver mais",
+      experienceDescriptionLW:
+        "Particpei do Bootcamp do Le Wagon entre Janeiro 2020 e Junho 2020",
+      experienceDescriptionFreelance:
+        "<li>Desenvolvedor Fullstack freelance trabalhando em vários projetos profissionais e pessoais (RoR, React, NodeJS etc..).</li><li>Teacher-Assistant no <b>Le Wagon</b>.</li>",
+      experienceDescriptionSightcall:
+        "<li>Desenvolvedor FullStack na Sightcall trablahando com várias tecnologias (Ruby on Rails, EmberJS, ElasticSearch etc...)</li>",
       french: "Francês",
+      introduction: "Oi, sou o Alexis",
       navbarIntroduction: "Apresentação",
       navbarExperiences: "Experiências",
       navbarSkills: "Compêtencias",
