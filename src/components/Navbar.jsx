@@ -3,7 +3,6 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
 import i18n from "../i18n.js";
-import i18next from "i18next";
 import "./Navbar.css";
 
 function classNames(...classes) {
@@ -43,7 +42,7 @@ export default function Navbar() {
   ];
 
   const changeLanguage = (newLanguage) => {
-    i18next.changeLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   return (
@@ -89,7 +88,7 @@ export default function Navbar() {
                       <span className="sr-only">Open translation menu</span>
                       <div
                         className={`text-lg icon-flag fib fi fis fi-${
-                          languagesFlags[i18next.resolvedLanguage]
+                          languagesFlags[i18n.resolvedLanguage]
                         }`}
                       ></div>
                     </Menu.Button>

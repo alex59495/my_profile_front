@@ -2,11 +2,12 @@ import Navbar from "../components/Navbar";
 import Contacts from "../components/Contacts";
 import SearchBar from "../components/SearchBar";
 import Stars from "../components/Stars";
-import i18n from "../i18n";
 import { useState, useEffect } from "react";
 import { defaultSkills } from "../constants";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t } = useTranslation();
   const [skills, setSkills] = useState(defaultSkills);
   const [selectedLevels, setSelectedLevels] = useState([
     "basic",
@@ -55,7 +56,7 @@ export default function Skills() {
       <Navbar />
       <SearchBar
         searchElements={searchElements}
-        placeholder={i18n.t("searchPlaceholder")}
+        placeholder={t("searchPlaceholder")}
       />
 
       {/* CHECKBOXES */}

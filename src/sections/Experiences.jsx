@@ -1,8 +1,11 @@
 import Navbar from "../components/Navbar";
 import Stepper from "../components/Stepper";
-import i18n from "../i18n";
+import Contacts from "../components/Contacts";
+import { useTranslation } from "react-i18next";
 
 export default function Experiences() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Navbar />
@@ -10,24 +13,27 @@ export default function Experiences() {
         steps={[
           {
             role: "Le Wagon bootcamp",
-            description: i18n.t("experienceDescriptionLW"),
+            description: t("experienceDescriptionLW"),
             icon: "LeWagon.png",
-            date: i18n.t("dateLeWagon"),
+            date: t("dateLeWagon"),
+            link: "https://www.lewagon.com/fr",
           },
           {
             role: "Freelance Web Developper",
-            description: i18n.t("experienceDescriptionFreelance"),
+            description: t("experienceDescriptionFreelance"),
             icon: "person-workspace.svg",
-            date: i18n.t("dateFreelance"),
+            date: t("dateFreelance"),
           },
           {
-            role: "Fullstack Web Developer",
-            description: i18n.t("experienceDescriptionSightcall"),
+            role: "Fullstack Web Developer - Sightcall",
+            description: t("experienceDescriptionSightcall"),
             icon: "Sightcall.svg",
-            date: i18n.t("dateSightcall"),
+            date: t("dateSightcall"),
+            link: "https://sightcall.com/fr/technology/visual-assistance-platform",
           },
         ]}
       />
+      <Contacts />
     </div>
   );
 }

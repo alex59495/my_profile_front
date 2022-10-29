@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 h1 {
   font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 /* CONTAINERS */
@@ -14,6 +23,45 @@ h1 {
 
 .search-container {
   max-width: 600px;
+}
+
+/* INTRODUCTION */
+blockquote.bubble {
+  line-height: 1.25;
+	background-position: center;
+  background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+	text-align: center;
+	height: 0;
+	box-sizing: content-box;
+	line-height: 1;
+}
+blockquote.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+  width: 90%;
+  height: 30vh;
+  padding-top: 6%;
+	padding-bottom: 20%;
+}
+
+.image-profile {
+  transform: scaleX(-1);
+}
+
+@media(min-width: 768px) {
+  blockquote.speech {
+    width: 75%;
+    height: 20vh;
+  }
+}
+
+@media(min-width: 1024px) {
+  blockquote.speech {
+    width: 50%;
+    height: 10vh;
+  }
 }
 
 /* STEPPER */
