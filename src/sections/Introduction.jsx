@@ -32,7 +32,7 @@ export default function Introduction() {
       <Navbar />
       <Particles
         id="tsparticles"
-        url="../../particles.json"
+        url="particles.json"
         init={particlesInit}
         canvasClassName="h-2/4"
         canvasStyle=""
