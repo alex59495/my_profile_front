@@ -24,34 +24,39 @@ export default function Game() {
     } else {
       return (
         <div>
-          <h2 className="text-center">{t("gameTitle")}</h2>
-          <div className="text-center score d-flex">
-            <div className="mr-2">
-              {t("gameAlexisHighscore")} :<span className="ml-2">95</span>
-            </div>
-          </div>
-          <div className="text-center score d-flex">
-            <div className="mr-2">
-              {t("gameCurrentScore")} :
-              <span id="score" className="ml-2">
-                0
-              </span>
-            </div>
-          </div>
-          <div className="text-center highscore d-flex">
-            <div className="mr-2">
-              {t("gameHighScore")} :
-              <span id="highscore" className="ml-2">
-                0
-              </span>
-            </div>
-          </div>
+          <h2 className="m-3 text-center border-">{t("gameTitle")}</h2>
+          <table className="table-auto m-auto">
+            <thead>
+              <tr>
+                <th>{t("gameAlexisHighscore")}</th>
+                <th>95</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{t("gameCurrentScore")}</td>
+                <td>
+                  <span id="score" className="ml-2">
+                    0
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>{t("gameHighScore")}</td>
+                <td>
+                  <span id="highscore" className="ml-2">
+                    0
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <div className="flex justify-center items-center">
             <canvas
               id="gameCanvas"
               width="400"
               height="400"
-              className="mt-4 border"
+              className="mt-4 border bg-gray-200"
             ></canvas>
           </div>
         </div>

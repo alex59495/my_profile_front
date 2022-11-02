@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background: #F4F4F9
 }
 
 h1 {
@@ -23,6 +24,18 @@ h2 {
 
 .search-container {
   max-width: 600px;
+}
+
+#tsparticles {
+  position: absolute;
+  height: 90vh;
+}
+
+/* NAVBAr */
+.icon-flag {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
 }
 
 /* INTRODUCTION */

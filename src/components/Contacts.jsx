@@ -3,7 +3,7 @@ export default function Contacts({ showcase }) {
     if (showcase) {
       return (
         <div className="flex justify-center mb-2 text-lg text-red-800">
-          <i class="animate-bounce fa-solid fa-circle-arrow-down"></i>
+          <i className="animate-bounce fa-solid fa-circle-arrow-down"></i>
         </div>
       );
     }

@@ -7,7 +7,7 @@ export default function Experiences() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="min-h-full">
       <Navbar />
       <Stepper
         steps={[

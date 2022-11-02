@@ -24,8 +24,8 @@ export default function Stepper({ steps }) {
   };
 
   return (
-    <div>
-      <div className="flex justify-between mt-4">
+    <div className="pt-4 h-full">
+      <div className="flex justify-between">
         {steps.map((step, i) => {
           return (
             <div className="step-container" key={i}>
@@ -53,7 +53,7 @@ export default function Stepper({ steps }) {
           src={`/${steps[currentStep - 1].icon}`}
           alt="icon"
           width="200"
-          className="mx-auto my-4"
+          className="mx-auto py-4"
         />
 
         {renderButton()}
@@ -62,7 +62,7 @@ export default function Stepper({ steps }) {
           dangerouslySetInnerHTML={{
             __html: steps[currentStep - 1].description,
           }}
-          className="text-left m-4"
+          className="text-left p-4"
         ></div>
       </div>
     </div>
