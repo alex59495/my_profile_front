@@ -1,3 +1,11 @@
+export const isTouchDevice = () => {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+};
+
 const snakeGame = () => {
   const currentHighScore = localStorage.getItem("highscoreSnakeAlexisLenoir");
 
@@ -131,34 +139,50 @@ const snakeGame = () => {
       });
     }
 
-    // listen to keyboard events to move the snake
-    document.addEventListener("keydown", function (e) {
-      // prevent snake from backtracking on itself by checking that it's
-      // not already moving on the same axis (pressing left while moving
-      // left won't do anything, and pressing right while moving left
-      // shouldn't let you collide with your own body)
+    if (!isTouchDevice()) {
+      // listen to keyboard events to move the snake on DESKTOP
+      document.addEventListener("keydown", function (e) {
+        console.log("%ccocououc", "background-color: purple; color: white");
+        // prevent snake from backtracking on itself by checking that it's
+        // not already moving on the same axis (pressing left while moving
+        // left won't do anything, and pressing right while moving left
+        // shouldn't let you collide with your own body)
 
-      // w key => top
-      if (e.which === 65 && snake.dx === 0) {
+        // w key => top
+        if (e.which === 65 && snake.dx === 0) {
+          snake.dx = -grid;
+          snake.dy = 0;
+        }
+        // a key => left
+        else if (e.which === 87 && snake.dy === 0) {
+          snake.dy = -grid;
+          snake.dx = 0;
+        }
+        // d key => right
+        else if (e.which === 68 && snake.dx === 0) {
+          snake.dx = grid;
+          snake.dy = 0;
+        }
+        // s key => down
+        else if (e.which === 83 && snake.dy === 0) {
+          snake.dy = grid;
+          snake.dx = 0;
+        }
+      });
+    } else {
+      console.log(
+        "%ccontext",
+        "background-color: purple; color: white",
+        context
+      );
+      // listen to keyboard events to move the snake on MOBILE TABLET
+      canvas.addEventListener("touchstart", function (e) {
+        e.stopPropagation();
+
         snake.dx = -grid;
         snake.dy = 0;
-      }
-      // a key => left
-      else if (e.which === 87 && snake.dy === 0) {
-        snake.dy = -grid;
-        snake.dx = 0;
-      }
-      // d key => right
-      else if (e.which === 68 && snake.dx === 0) {
-        snake.dx = grid;
-        snake.dy = 0;
-      }
-      // s key => down
-      else if (e.which === 83 && snake.dy === 0) {
-        snake.dy = grid;
-        snake.dx = 0;
-      }
-    });
+      });
+    }
 
     // start the game
     requestAnimationFrame(loop);

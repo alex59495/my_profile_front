@@ -12,7 +12,7 @@ export default function Game() {
     if (!isMobile) {
       snakeGame();
     }
-  });
+  }, []);
 
   const renderContent = () => {
     if (isMobile) {
