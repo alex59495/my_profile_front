@@ -43,7 +43,7 @@ const resources = {
       gameAlexisHighscore: "Alexis' highscore",
       gameCurrentScore: "Actual score",
       gameHighScore: "Your highscore",
-      introduction_text_1: "Hi, I'm Alexis! Welcome to my personal website",
+      introduction_text_1: "Hi, I'm Alexis! Welcome to my personal website.",
       introduction_text_2:
         "Graduated as an Urban System engineer at the University of Technology of Compiègne (UTC), I made a carrer change to web development in 2020. I participated to the Bootcamp Le Wagon between January and June 2020.",
       introduction_text_3:
@@ -154,15 +154,15 @@ const resources = {
         "Eita, parece que você está num smarthphone, ineflizmente so pode jogar o jogo num computador.",
       gameCurrentScore: "Pontuação atual",
       gameHighScore: "Recorde atual",
-      introduction_text_1: "Olá, sou Alexis! Bem-vindo ao meu site pessoal",
+      introduction_text_1: "👋 Olá, sou Alexis! Bem-vindo ao meu site pessoal.",
       introduction_text_2:
-        "Graduei como engenheiro de sistema urbano na Universidade de Tecnologia de Compiègne (UTC), e me entrei no mundo da tecnologia em 2020, participando do Bootcamp Le Wagon entre janeiro e junho de 2020",
+        "Me formei como engenheiro de sistema urbano na Universidade de Tecnologia de Compiègne (UTC), e me entrei no mundo da tecnologia em 2020, participando do Bootcamp Le Wagon entre janeiro e junho de 2020",
       introduction_text_3:
         "Após quase um ano de experiência como desenvolvedor freelance trabalhando em projetos profissionais e pessoais, entrei na Sightcall como desenvolvedor Fullstack em fevereiro de 2022",
       introduction_text_4:
         "Adoro assumir novos desafios técnicos, trabalhar com novas tecnologias e trabalhar em equipe",
       introduction_text_5:
-        "Estou sempre aberto a novos desafios, portanto não hesite em me contatar",
+        "Estou sempre aberto a novos desafios, portanto não hesite em me contatar !",
       introduction: "Oi, sou o Alexis !",
       navbarIntroduction: "Apresentação",
       navbarExperiences: "Experiências",

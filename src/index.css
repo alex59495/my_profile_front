@@ -18,7 +18,8 @@ h2 {
 
 /* CONTAINERS */
 .main-container {
-  min-height: 100vh;
+  height: -webkit-fill-available;
+  height: 100dvh;
   overflow: auto;
 }
 
@@ -61,6 +62,10 @@ blockquote.speech {
 
 .image-profile {
   transform: scaleX(-1);
+}
+
+.al-emoji {
+  font-size: 30px;
 }
 
 @media(min-width: 768px) {

@@ -30,6 +30,7 @@ export default function Experiences() {
             icon: "Sightcall.svg",
             date: t("dateSightcall"),
             link: "https://sightcall.com/fr/technology/visual-assistance-platform",
+            videoIframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/A5ib0dNhCSI?si=dfLpTtq8poLUgNPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
           },
         ]}
       />

@@ -27,6 +27,14 @@ export default function Introduction() {
     }
   };
 
+  const EMOJIS = {
+    1: "👋",
+    2: "💻",
+    3: "👨‍💻",
+    4: "🧠",
+    5: "📨",
+  };
+
   return (
     <>
       <Navbar />
@@ -37,8 +45,9 @@ export default function Introduction() {
         canvasClassName="h-2/4"
         canvasStyle=""
       />
-      <blockquote className="speech bubble relative italic">
-        <div className="mt-[5%] md:mt-0 px-[13%] sm:text-sm md:text-base lg:text-lg xl:text-xl">
+      <blockquote className="speech bubble relative">
+        <div className="al-emoji">{EMOJIS[step]}</div>
+        <div className="mt-[5%] md:mt-0 px-[13%] sm:text-sm md:text-base lg:text-lg xl:text-xl italic">
           {t(`introduction_text_${step}`)}
         </div>
         <div className="flex justify-center absolute bottom-[40%] w-full">

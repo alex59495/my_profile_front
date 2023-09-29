@@ -2,9 +2,10 @@ export default function Contacts({ showcase }) {
   const isShowcasing = () => {
     if (showcase) {
       return (
-        <div className="flex justify-center mb-2 text-lg text-red-800">
-          <i className="animate-bounce fa-solid fa-circle-arrow-down"></i>
-        </div>
+        <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-700 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-800"></span>
+        </span>
       );
     }
   };
@@ -12,11 +13,7 @@ export default function Contacts({ showcase }) {
   return (
     <div className="fixed bottom-5 right-5">
       {isShowcasing()}
-      <div
-        className={`flex shadow-md ${
-          showcase ? "shadow-red-800/50" : ""
-        } px-2 py-3 rounded-lg bg-slate-100`}
-      >
+      <div className={`flex shadow-md px-2 py-3 rounded-lg bg-slate-100`}>
         <a
           href="https://www.linkedin.com/in/alexis-lenoir-857496ab/"
           className="mx-3 hover:shadow-md"

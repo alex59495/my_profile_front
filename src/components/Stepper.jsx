@@ -23,6 +23,19 @@ export default function Stepper({ steps }) {
     }
   };
 
+  const renderVideoIframe = () => {
+    if (steps[currentStep - 1].videoIframe) {
+      return (
+        <div
+          class="al-container-video mb-2 flex justify-center"
+          dangerouslySetInnerHTML={{
+            __html: steps[currentStep - 1].videoIframe,
+          }}
+        ></div>
+      );
+    }
+  };
+
   return (
     <div className="pt-4 h-full">
       <div className="flex justify-between">
@@ -55,6 +68,8 @@ export default function Stepper({ steps }) {
           width="200"
           className="mx-auto py-4"
         />
+
+        {renderVideoIframe()}
 
         {renderButton()}
 
