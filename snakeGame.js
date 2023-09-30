@@ -142,7 +142,6 @@ const snakeGame = () => {
     if (!isTouchDevice()) {
       // listen to keyboard events to move the snake on DESKTOP
       document.addEventListener("keydown", function (e) {
-        console.log("%ccocououc", "background-color: purple; color: white");
         // prevent snake from backtracking on itself by checking that it's
         // not already moving on the same axis (pressing left while moving
         // left won't do anything, and pressing right while moving left
@@ -170,11 +169,6 @@ const snakeGame = () => {
         }
       });
     } else {
-      console.log(
-        "%ccontext",
-        "background-color: purple; color: white",
-        context
-      );
       // listen to keyboard events to move the snake on MOBILE TABLET
       canvas.addEventListener("touchstart", function (e) {
         e.stopPropagation();
