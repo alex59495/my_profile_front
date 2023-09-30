@@ -152,30 +152,63 @@ const snakeGame = () => {
           snake.dx = -grid;
           snake.dy = 0;
         }
+        // s key => down
+        else if (e.which === 83 && snake.dy === 0) {
+          snake.dx = 0;
+          snake.dy = grid;
+        }
         // a key => left
         else if (e.which === 87 && snake.dy === 0) {
-          snake.dy = -grid;
           snake.dx = 0;
+          snake.dy = -grid;
         }
         // d key => right
         else if (e.which === 68 && snake.dx === 0) {
           snake.dx = grid;
           snake.dy = 0;
         }
-        // s key => down
-        else if (e.which === 83 && snake.dy === 0) {
-          snake.dy = grid;
-          snake.dx = 0;
-        }
       });
     } else {
-      // listen to keyboard events to move the snake on MOBILE TABLET
-      canvas.addEventListener("touchstart", function (e) {
-        e.stopPropagation();
+      const canvasDimension = canvas.getBoundingClientRect();
+      const centerCanvas = {
+        centerX:
+          (canvasDimension.right - canvasDimension.left) / 2 +
+          canvasDimension.left,
+        centerY:
+          (canvasDimension.bottom - canvasDimension.top) / 2 +
+          canvasDimension.top,
+      };
 
-        snake.dx = -grid;
-        snake.dy = 0;
-      });
+      // listen to keyboard events to move the snake on MOBILE TABLET
+      canvas.addEventListener(
+        "touchstart",
+        (e) => {
+          e.preventDefault();
+          const touch = e.touches[0];
+
+          // hit the top part of the canva. Move snake to top
+          if (touch.clientY < centerCanvas.centerY && snake.dy === 0) {
+            snake.dx = 0;
+            snake.dy = -grid;
+          }
+          // hit the bottom part of the canva. Move snake to bottom
+          else if (touch.clientY > centerCanvas.centerY && snake.dy === 0) {
+            snake.dx = 0;
+            snake.dy = grid;
+          }
+          // hit the left part of the canva. Move snake to left
+          else if (touch.clientX < centerCanvas.centerX && snake.dx === 0) {
+            snake.dx = -grid;
+            snake.dy = 0;
+          }
+          // hit the right part of the canva. Move snake to right
+          else if (touch.clientX > centerCanvas.centerX && snake.dx === 0) {
+            snake.dx = grid;
+            snake.dy = 0;
+          }
+        },
+        false
+      );
     }
 
     // start the game
