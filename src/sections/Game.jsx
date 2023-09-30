@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Contacts from "../components/Contacts";
 import { snakeGame } from "../../snakeGame";
 import { useEffect } from "react";
+import { isMobile } from "react-device-detect";
 import { useTranslation } from "react-i18next";
 
 export default function Game() {
@@ -44,8 +45,8 @@ export default function Game() {
         <div className="flex justify-center items-center">
           <canvas
             id="gameCanvas"
-            width="400"
-            height="400"
+            width={!isMobile ? "400" : "300"}
+            height={!isMobile ? "400" : "300"}
             className="mt-4 border bg-gray-200"
           ></canvas>
         </div>
