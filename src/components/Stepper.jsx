@@ -27,7 +27,7 @@ export default function Stepper({ steps }) {
     if (steps[currentStep - 1].videoIframe) {
       return (
         <div
-          class="al-container-video mb-2 flex justify-center"
+          className="al-container-video mb-2 flex justify-center"
           dangerouslySetInnerHTML={{
             __html: steps[currentStep - 1].videoIframe,
           }}
