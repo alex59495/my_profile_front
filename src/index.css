@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,10 +85,6 @@ blockquote.speech {
 
 /* STEPPER */
 @layer components {
-  .step-container {
-    @apply grow;
-  }
-
   .step-item {
     @apply relative flex flex-col justify-center items-center cursor-pointer w-full;
   }

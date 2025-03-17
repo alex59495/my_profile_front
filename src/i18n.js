@@ -22,9 +22,9 @@ const resources = {
       experienceDescriptionFreelance: `
         <div>Fullstack freelance developer working on several professional and personal projects while continuing to deepen my knowledge on new technologies/frameworks.</div>
         <br><br>
-        <li>Participation in the Résonances project: collaborative work platform using mind-mapping logic</li>
-        <li>Teacher-Assistant at the Wagon to help new students</li>
-        <li>Participation in the 2Mão project in partnership with Banco Carrefour Brasil</li>
+        <li>Participation in the Résonances project: collaborative work platform using mind-mapping logic (RoR & React)</li>
+        <li>Teacher-Assistant at the Wagon to help new students (Ruby, JS, CSS, RoR)</li>
+        <li>Participation in the 2Mão project in partnership with Banco Carrefour Brasil (RoR)</li>
         <li>Development of personal side projects (NodeJS, React etc...)</li>
         `,
       experienceDescriptionSightcall: `
@@ -32,7 +32,9 @@ const resources = {
         <br><br>
         <li>Maintenance and development of the core API (Ruby, RoR) around the JSON API specifications</li>
         <li>Development of Front-End projects around finite state machines</li>
+        <li>Update of legacy projects, CI/CD processes, Good practices</li>
         <li>Work in SCRUM format with two-week sprints</li>
+        <li>Newcomer training</li>
         <li>Use of multiple technologies and frameworks: ElasticSearch, Kibana, EmberJS, Ruby, Ruby on Rails etc...</li>
         `,
       french: "French",
@@ -79,9 +81,9 @@ const resources = {
       experienceDescriptionFreelance: `
         <div>Développeur Fullstack freelance travaillant sur plusieurs projets professionels et personnels tout en continuant d'approfondir mes connaissances sur des nouvelles technologies/framework.</div>
         <br><br>
-        <li>Participation au projet Résonances : plateforme de travail collaboratif utilisant une logique de mind-mapping</li>
-        <li>Teacher-Assistant au Wagon pour aider les nouveaux étudiants</li>
-        <li>Participation au projet 2Mão en partenariat avec Banco Carrefour Brasil</li>
+        <li>Participation au projet Résonances : plateforme de travail collaboratif utilisant une logique de mind-mapping (RoR & React)</li>
+        <li>Teacher-Assistant au Wagon pour aider les nouveaux étudiants (Ruby, JS, CSS, RoR)</li>
+        <li>Participation au projet 2Mão en partenariat avec Banco Carrefour Brasil (RoR)</li>
         <li>Dévelopement de projets personnels annexes (NodeJS, React etc...)</li>
         `,
       experienceDescriptionSightcall: `
@@ -89,7 +91,9 @@ const resources = {
         <br>
         <li>Maintien et développement de l'API centrale (Ruby, RoR) autour des spécififcations JSON API</li>
         <li>Développement de projets Front-End autour des machines à états finis</li>
+        <li>Mise à jour de projets legacy, processus CI/CD, Bonnes pratiques</li>
         <li>Travail en format SCRUM avec des sprints de deux semaines</li>
+        <li>Formation des nouveaux arrivants</li>
         <li>Utilisation de technologies et frameworks multiples : ElasticSearch, Kibana, EmberJS, Ruby, Ruby on Rails etc..</li>
         `,
       french: "Français",
@@ -134,16 +138,18 @@ const resources = {
         <li>Descobrir as melhores práticas e o trabalho em equipe em um ambiente dinâmico e estimulante</li>`,
       experienceDescriptionFreelance: `
         <div>Desenvolvedor freelance Fullstack trabalhando em vários projetos profissionais e pessoais enquanto continuo a aprofundar meu conhecimento de novas tecnologias/frameworks.</div>
-        <li>Participação no projeto Resonances: plataforma de trabalho colaborativo utilizando a lógica de mind-mapping</li>
-        <li>Professor-Assistente no Le Wagon para ajudar os novos alunos</li>
-        <li>Participação no projeto 2Mão em parceria com o Banco Carrefour Brasil</li>
-        <li>Desenvolvimento de projetos pessoais (NodeJS, Reage, etc...)</li>
+        <li>Participação no projeto Resonances: plataforma de trabalho colaborativo utilizando a lógica de mind-mapping (RoR & React)</li>
+        <li>Professor-Assistente no Le Wagon para ajudar os novos alunos (Ruby, JS, CSS, RoR)</li>
+        <li>Participação no projeto 2Mão em parceria com o Banco Carrefour Brasil (RoR)</li>
+        <li>Desenvolvimento de projetos pessoais (NodeJS, React, etc...)</li>
       `,
       experienceDescriptionSightcall: `
         <div>Plataforma líder de assistência em vídeo para empresas, Sightcall é uma solução de assistência em vídeo SaaS que integra as ferramentas e recursos necessários para resolver rápida e eficientemente os problemas dos clientes e dos técnicos de campo.</div>
         <li>Manutenção e desenvolvimento da API (Ruby, RoR) usando as especificações JSON API</li>
         <li>Desenvolvimento de projetos Front-End com máquinas de estado finito</li>
+        <li>Atualização de projetos legados, processos CI/CD, Boas práticas</li>
         <li>Trabalhando no formato SCRUM com duas semanas de sprints</li>
+        <li>Formação de novos colaboradores</li>
         <li>Usando múltiplas tecnologias e framework: ElasticSearch, Kibana, EmberJS, Ruby, Ruby on Rails etc...</li>
       `,
       french: "Francês",

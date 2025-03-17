@@ -18,13 +18,13 @@ export default function Game() {
         <table className="table-auto m-auto">
           <thead>
             <tr>
-              <th>{t("gameAlexisHighscore")}</th>
+              <th class="px-10">{t("gameAlexisHighscore")}</th>
               <th>95</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{t("gameCurrentScore")}</td>
+              <td class="px-10">{t("gameCurrentScore")}</td>
               <td>
                 <span id="score" className="ml-2">
                   0
@@ -32,7 +32,7 @@ export default function Game() {
               </td>
             </tr>
             <tr>
-              <td>{t("gameHighScore")}</td>
+              <td class="px-10">{t("gameHighScore")}</td>
               <td>
                 <span id="highscore" className="ml-2">
                   0

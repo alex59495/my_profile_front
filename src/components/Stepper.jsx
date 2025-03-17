@@ -27,7 +27,7 @@ export default function Stepper({ steps }) {
     if (steps[currentStep - 1].videoIframe) {
       return (
         <div
-          className="al-container-video mb-2 flex justify-center"
+          className="al-container-video my-5 flex justify-center"
           dangerouslySetInnerHTML={{
             __html: steps[currentStep - 1].videoIframe,
           }}
@@ -41,7 +41,7 @@ export default function Stepper({ steps }) {
       <div className="flex justify-between">
         {steps.map((step, i) => {
           return (
-            <div className="step-container" key={i}>
+            <div className="grow" key={i}>
               <div
                 className={`step-item ${currentStep === i + 1 && "active"} ${
                   currentStep > i + 1 && "complete"
@@ -69,8 +69,6 @@ export default function Stepper({ steps }) {
           className="mx-auto py-4"
         />
 
-        {renderVideoIframe()}
-
         {renderButton()}
 
         <div
@@ -79,6 +77,9 @@ export default function Stepper({ steps }) {
           }}
           className="text-left p-4"
         ></div>
+
+        {renderVideoIframe()}
+
       </div>
     </div>
   );
