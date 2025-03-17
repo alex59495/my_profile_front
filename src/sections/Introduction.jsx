@@ -57,7 +57,7 @@ export default function Introduction() {
             className="mr-2 px-2 py-1 grid mx-auto bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md enabled:hover:bg-gray-700 enabled:hover:shadow-lg enabled:focus:bg-gray-700 enabled:focus:shadow-lg enabled:focus:outline-none focus:ring-0 enabled:active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out disabled:opacity-75"
             disabled={step === 1}
           >
-            <i className="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left hover:cursor-pointer"></i>
           </button>
 
           <button
@@ -66,7 +66,7 @@ export default function Introduction() {
             className="px-2 py-1 grid mx-auto bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md enabled:hover:bg-gray-700 enabled:hover:shadow-lg enabled:focus:bg-gray-700 enabled:focus:shadow-lg enabled:focus:outline-none focus:ring-0 enabled:active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out disabled:opacity-75"
             disabled={step === maxSteps}
           >
-            <i className="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right hover:cursor-pointer"></i>
           </button>
         </div>
       </blockquote>
