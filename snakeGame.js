@@ -147,23 +147,16 @@ const snakeGame = () => {
         // left won't do anything, and pressing right while moving left
         // shouldn't let you collide with your own body)
 
-        // w key => top
-        if (e.which === 65 && snake.dx === 0) {
+        if (e.key === "ArrowLeft" && snake.dx === 0) {
           snake.dx = -grid;
           snake.dy = 0;
-        }
-        // s key => down
-        else if (e.which === 83 && snake.dy === 0) {
+        } else if (e.key === "ArrowDown" && snake.dy === 0) {
           snake.dx = 0;
           snake.dy = grid;
-        }
-        // a key => left
-        else if (e.which === 87 && snake.dy === 0) {
+        } else if (e.key === "ArrowUp" && snake.dy === 0) {
           snake.dx = 0;
           snake.dy = -grid;
-        }
-        // d key => right
-        else if (e.which === 68 && snake.dx === 0) {
+        } else if (e.key === "ArrowRight" && snake.dx === 0) {
           snake.dx = grid;
           snake.dy = 0;
         }
